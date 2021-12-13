@@ -1,0 +1,183 @@
+
+header {
+    background: #1b1212;
+    height: 85px;
+    border-radius: 6px 6px 0px 0px;
+   
+}
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+.logo {
+    line-height: 40px;
+    margin-left: -20px;
+}
+
+nav > ul {
+    float: right;
+    
+}
+nav > ul > li {
+    text-align: center;
+    line-height: 85px;
+    margin-left: 70px;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover > a {
+    color: #FFBF00;
+}
+nav > ul > li > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+}
+nav > ul > li {
+    float: left;
+}
+nav a {
+    color: white;
+}
+
+[type="checkbox"],
+label {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    label {
+        display: block;
+        background: #222;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+    label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+    }
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+    }
+    nav a {
+        color: #777;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #222;
+        text-indent: 20px;
+    }
+    nav > ul > li {
+        margin-left: 0px;
+    }
+    
+    nav > ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        float: none;
+    }
+}
+.content{
+    background-color: #d3d3d3;
+    margin:0px;
+    width:20%;
+    height: 95vh;
+    overflow-y: scroll;
+}
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	.content
+	{
+		width: 100%;
+		margin: 0 auto;
+        background-color: #838383;
+	}
+
+}
+.content-defined{
+        
+    width: 80%;
+     margin-left: 20%;
+    margin-top: -95vh;
+    position: absolute;
+    height: 95vh;
+     background-color: white;
+     overflow:hidden;
+     
+     }
+     @media only screen and (min-width : 150px) and (max-width : 780px)
+{
+.content-defined
+{
+    width: 100%;
+    margin: 0 auto;
+        }
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 200px;
+    background: transparent;
+    }
+   td, th {
+	text-align: center;
+	padding: 0px;
+    }
+   hr{
+       border:transparent;
+   }
+       .hrop{
+           color:#1b1212 ;
+       }
+   
+       .hrTop{
+        border: 1px solid #1b1212;
+    }
+    .selected{
+        color: #FFBF00;
+    }
+    span{
+        color: #228b22;
+    }
+    .side-selected{
+        background-color: #1b1212;
+        color:white;
+        vertical-align: middle;
+        padding-top: 10px;
+        border-radius: 0px 6px 0px 6px;
+        height: 10px;
+        }
+      
